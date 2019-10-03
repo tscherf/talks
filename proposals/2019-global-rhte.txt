@@ -1,0 +1,37 @@
+Identity Management Workshop based on the IPA framework
+
+IPA is an integrated identity management solution providing centralised
+user, host and service management, authentication and authorisation in
+Linux/UNIX networked environments, with a focus on ease of deployment and
+management. It is built on top of well-known Open Source technologies and
+standards including 389 Directory Server, MIT Kerberos, Samba and Dogtag
+Certificate System.
+
+This hand-on workshop will provide participants with a comprehensive
+introduction to Identity Management including server deployment and
+administration, client machine enrolment, and configuring server software to
+use IPA's centralised identity and policy store. The workshop will also cover
+the integration with Microsoft Active Directory by setting up a trust between
+IPA and the an Active Directory forest to allow users from AD to access
+resources managed by IPA.
+
+Participants will learn about the following topics:
+
+- Install an Identity Management server and replica
+- Enrol client machines in the domain
+- Create and administer users
+- Manage host-based access control (HBAC) policies
+- Issue X.509 certificates for network services
+- Trust setup with Active Directory
+
+There will be a number of elective units which participants can choose, based
+on their progress and particular use cases: 
+
+- Configure a web server to use IPA for user authentication and access control
+- OTP two-factor authentication
+- Advanced certificate management: profiles, sub-CAs and user certificates
+- OpenSSH key management
+
+
+
+

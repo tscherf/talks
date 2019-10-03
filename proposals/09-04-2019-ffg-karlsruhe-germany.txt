@@ -1,0 +1,34 @@
+Thema: Network-bound Disk-Encryption
+
+Das Verschlüsseln von Festplatten ist im Grunde ein alter Hut. LUKS Volumes
+werden mittlerweile standardmässig als Teil einer System Installation
+eingerichtet. Allerdings ist für das Entschlüsseln der Festplatte beim
+Systemstart die manuelle Angabe einer Passphrase notwendig um hiermit den
+eigentlichen Key, der zum Verschlüsseln der Daten verwendet wurde,
+freizuschalten.  Mit dem Framework Clevis und Tang lässt  sich dieser
+Schritt automatisieren. Tang ist ein Server der dafür sorgt, dass Daten beim
+Zugriff automatisch entschlüsselt werden können. Der Server erfordert kein
+TLS, da keine sensiblen Daten über das Netzwerk ausgetauscht werden. Anders
+als bei klassischen Escrow-Systemen speichert Tang keine Keys ab, die dann
+zum Entschlüsseln der Daten eingesetzt werden können.  Stattdessen verwendet
+die Client-Komponente Clevis eine Methode auf Basis des McCallum-Relyea
+Algorithmus um den Key zum Entschlüsseln der Daten für den Recovery Vorgang
+erneut zu berechnen. Für diesen Vorgang kommen sogenannte PINs zum Einsatz.
+Hierbei handelt es sich um Plugins die sich um das automatische
+Entschlüsseln der Daten kümmern. Clevis unterstützt neben der Tang PIN
+ebenfalls auch noch TPM. Mit Hilfe des Shamir Secret Sharing Algorithmus
+lassen sich die einzelnen PINs auch kombinieren . Somit ist es
+beispielsweise möglich, die Daten nur dann entschlüsseln zu können, wenn die
+Festplatte Zugriff einen bestimmten TPM-Chip hat aber ebenfalls auch Zugriff
+auf  den Tang-Server besitzt.
+
+Weitere Details finden sich in den GitHub Repositories der beiden Komponenten:
+https://github.com/latchset/clevis
+https://github.com/latchset/tang
+
+
+Thorsten Scherf arbeitet als Product-Lead für Identity-Management im Support
+Engineering Team des Linux-Distributors Red Hat und ist oft auf diversen
+internationalen Konferenzen als Vortragender anzutreffen.
+
+

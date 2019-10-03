@@ -1,0 +1,17 @@
+Securing Automated Decryption
+
+This talk covers an alternative to key escrows using new cryptographic
+techniques implemented by the Clevis (client) and Tang (server) projects.
+
+Keeping secrets is tough. It is hard enough when you have control over the full
+computing chain. But now we are expected to keep secrets while storing those
+secrets in cloud and SaaS infrastructures. At least we can trust the network
+providers, right? Of course, the answer is to encrypt the data. But then how do
+we know who should have access to the data and when? This talk will look at the
+new strategies and cryptographic techniques implemented by the Tang and Clevis
+open source projects. Tang forgoes complex (and compromise-prone) key
+management infrastructures by using simple algorithms to bind data to third
+party entities. Clevis permits sophisticated unlocking policies that go beyond
+simply password management to true attributed cryptography. Come see how to
+integrate Tang and Clevis into your infrastructure or software project!
+

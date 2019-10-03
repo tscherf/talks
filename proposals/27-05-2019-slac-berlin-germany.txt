@@ -1,0 +1,21 @@
+Thema: Session Recording
+
+Das Aufzeichnen von Benutzer-Sessions ist in manchen Industriezweigen
+zwingend vorgeschrieben und Administratoren sind daher angehalten Ihre
+IT-Systemen anhand dieser Compliance Anforderung entsprechend zu
+konfigurieren.
+
+Das Scribery-Projekt ist eine Open-Source Lösung zur Aufzeichnung und
+Wiedergabe von Benutzer-Sessions. Die einzelnen Komponenten des Frameworks
+lassen sich standalone oder auch in Zusammenarbeit mit bereits vorhandenen
+Tools einsetzen. Auch eine Integration in die WebUI Cockpit zur Administration
+von Linux-Systemen ist vorhanden. Hiermit ist es sehr einfach möglich, eine
+Aufzeichnung von lokalen oder auch remote Benutzern einzurichten und die
+aufgezeichneten Sessions mit Hilfe des eingebauten Cockpit-Players abzuspielen.
+
+Der Talk gibt eine Einführung in das Scribery-Projekt und zeigt anhand von
+praktischen Beispielen wie sich die einzelnen Komponenten miteinander
+verbinden lassen und auch in bestehende Identity-Management Lösungen
+eingebunden werden können.
+
+
